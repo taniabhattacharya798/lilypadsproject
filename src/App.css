@@ -41,7 +41,7 @@ h1{
 font-family: "DM Serif Display";
 font-size: 71px;
 font-style: normal;
-font-weight: 600;
+font-weight: 400;
 margin-block-end: 0;
 margin-block-start: 0;
 
@@ -51,7 +51,7 @@ margin-block-start: 0;
 font-family: "DM Serif Display";
 font-size: 71px;
 font-style: normal;
-font-weight: 600;
+font-weight: 400;
 }
 p{
   color: #2F3130;
@@ -232,6 +232,7 @@ margin-bottom: 5%;
 .footer-heading{
   color: #FFF;
 font-size: 12px;
+font-family: "Urbanist";
 font-style: normal;
 font-weight: 600;
 letter-spacing: 0.096px;
@@ -241,6 +242,7 @@ margin-top: 50%;
 .footer-heading1{
   color: #FFF;
 font-size: 12px;
+font-family: "Urbanist";
 font-style: normal;
 font-weight: 600;
 letter-spacing: 0.096px;
@@ -250,6 +252,7 @@ padding-top: 1em;
 .footer-heading2{
   color: #FFF;
 font-size: 12px;
+font-family: "Urbanist";
 font-style: normal;
 font-weight: 600;
 letter-spacing: 0.096px;
@@ -260,6 +263,7 @@ margin-top: 8em;
 .footer-content{
   color: #FFF;
   font-size: 12px;
+  font-family: "Urbanist"; 
 font-style: normal;
 font-weight: 500;
 letter-spacing: 0.096px;
