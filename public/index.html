@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -24,28 +24,17 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    
     <title>Lilypads Project</title>
   </head>
   <body>
     
     <section class="hero-section">
-  <div>
+ <div>
     <h4>- Welcome to the</h4>
-    <h1>Unprecedented <br> Era of <span class="real"> Real Estate <br>Investing</span> </h1>
+    <h1>Unprecedented <br> Era of <span class="real" id="typed"></span> </h1>
     <p>Lilypads uses sophisticated technologies for data-driven decisions in<br> investing, managing and funding commercial real estate assets</p>
     <button class="btn"><i class="fa fa-home"></i> Start Investing Now </button> 
     <div class="number">
@@ -54,12 +43,12 @@
         <h5>Properties Registered</h5>
       </div>
       <div>
-        <h3>685+</h3>
-        <h5>Deals Cracked</h5>
+        <h3 class="number2">685+</h3>
+        <h5 class="deals">Deals Cracked</h5>
       </div>
       <div>
-        <h3>255+</h3>
-        <h5>Investors</h5>
+        <h3 class="number2">255+</h3>
+        <h5 class="Investors">Investors</h5>
       </div>
 
     </div> 
@@ -76,6 +65,38 @@
     
   </section>
 
+  <section class="hero-section-mobile">
+    <div>
+      <h4>- Welcome to the</h4>
+      <h1 class="headmobile">Unprecedented <br> Era of <span class="real1">Real Estate Investing </span> </h1>
+      <p>Lilypads uses sophisticated technologies for data-driven decisions in investing, managing and funding commercial real estate assets</p>
+      <div class="three-number">
+        <div>
+          <h3>658+</h3>
+          <h5>Properties Registered</h5>
+        </div>
+        <div>
+          <h3 class="number2">685+</h3>
+          <h5 class="deals">Deals Cracked</h5>
+        </div>
+        <div>
+          <h3 class="number2">255+</h3>
+          <h5 class="Investors">Investors</h5>
+        </div>
+     </div> 
+    </div>
+  </section>
+  <section class="image-section">
+    <div class="img-container">
+      <div class="imgsection">
+         <img src="Group 1597883252.png" class="img-section">
+      </div>
+      <div class="btnclass"><button class="btn"><i class="fa fa-home"></i> Start Investing Now </button></div>
+      </div>
+
+  </section>
+<div class="container">
+  
   <section class="middle-section">
   
     <div>
@@ -99,7 +120,7 @@
 <div class="icon-list">
   <div class="icon-box">
     <div class="icon-box-1">
-      <img src="Group 48096384 (1).svg" class=""></div>
+      <img src="Group 48096384.svg" class=""></div>
       <p1 class="icon-heading">Lilypads can help you <br>make smarter decisions.</p1>
     </div>
     <p2 class="icon-content">Streamline your investment evaluation<br>
@@ -145,13 +166,15 @@
 </div>
 
   </section>
-
+</div>
   <footer>
     <div>
-      <div class="footer-subscribe-wrapper">
-        <div class="footer-subscribe  mb-3">
-          <input required="" placeholder="Enter Your Email Here" type="email" class="form-control" value="" fdprocessedid="1zwict" style="cursor: none;">
-          <button type="button" class="btn-dark btn btn-none" fdprocessedid="z6prr" style="cursor: none;">Subscribe To Resider</button>
+      <div class="footer-subscribe">
+        <div class="footer-subscribe1">
+          <form>
+            <input type="email" name="email" placeholder="Enter Your Email Here">
+            <input type="submit" value="Subscribe To Newsletter">
+          </form>
       </div>
     </div>
       <h2>
@@ -208,7 +231,66 @@
         <div class="footer-content">Resource</div>
         <div class="footer-content">Blog</div>
     </div>
+
+<div class="footer-list-mobile">
+  <div class="mobile-logo"><img src="https://lilypads.s3.us-east-2.amazonaws.com/images/logo.png"></div>
+  <div class="footer-heading1">Reach Us At</div>
+  <div class="footer-content">6751 Columbia Gateway Dr.,<br>3rd floor, Columbia,<br>MD 21046</div>
+
+  <div class="footer-heading-mobile">
+    <div class="footer-head-mobile">
+      <div class="footer-heading">Network</div>
+      <div class="footer-content">Community</div>
+      <div class="footer-content">Investor</div>
+      <div class="footer-content">Broker</div>
+    </div>
+    <div class="footer-head-mobile">
+      <div class="footer-head-mobile1">Technology</div>
+      <div class="footer-content-mobile">Artificial Intelligence</div>
+      <div class="footer-content-mobile">Block Chain</div>
+    </div>
+    </div>
+</div>
+<div class="footer-list-mobile">
+  <div class="footer-heading-mobile">
+    <div class="footer-head-mobile">
+    <div class="footer-heading1">Product</div>
+        <div class="footer-content">Invest</div>
+        <div class="footer-content">Discover</div>
+        <div class="footer-content">Transact</div>
+        <div class="footer-content">Manage</div>
+      </div>
+      <div class="footer-head-mobile">
+      <div class="footer-head-mobile11">Highlights</div>
+      <div class="footer-content-mobile1">Impact of COVID-19 on the food and<br> beverage industry and the retail<br> sector<br><br> Commercial lending during<br> COVID-19: navigating the impact </div>
+</div>
+  </div>
+</div>
+<div class="footer-list-mobile">
+  <div class="footer-heading-mobile">
+    <div class="footer-head-mobile">
+      <div class="footer-heading2">Our Story</div>
+      <div class="footer-content">Approach</div>
+      <div class="footer-content">AboutUs</div>
+</div>
+<div class="footer-head-mobile">
+  <div class="footer-head-mobile11">Knowledge Center</div>
+  <div class="footer-content-mobile1">Resource</div>
+  <div class="footer-content-mobile1">Blog</div>
+</div>
+  </div>   
+</div>
+
       
   </footer>
   </body>
 </html>
+<script>
+  new Typed('#typed',{
+  strings : ['Developer','Designer','Real Estate <br> Investing'],
+  typeSpeed : 80,
+  delaySpeed : 100,
+  loop : true
+});
+</script>
+

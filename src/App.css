@@ -1,8 +1,49 @@
+.container{
+  background-image: url("https://i.ibb.co/JdYcvZ5/Group-48096419.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-color: #f5f4f8;
+}
+@media (min-width:2000px){
+  .container{
+  background-image: url("https://i.ibb.co/JdYcvZ5/Group-48096419.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4f8;
+}
+.middle-section{
+  gap: 116px !important;
+}
+.third-section{
+  gap: 180px !important;
+ }
+}
+
+@media (max-width:450px){
+  .container{
+  background-image: url("https://i.ibb.co/JdYcvZ5/Group-48096419.png");
+  background-size: 0;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-color: #f5f4f8;
+}
+}
+@media (max-width:800px){.container{
+  background-image: url("https://i.ibb.co/JdYcvZ5/Group-48096419.png");
+  background-size: 0;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-color: #f5f4f8;
+}
+}
 .hero-section{
   display: flex;
   background-image: url(https://lilypads.s3.us-east-2.amazonaws.com/images/cover/hero-bg.png);
     background-position-x: right;
     background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
     padding-top: 16.5rem;
     position: relative;
@@ -10,30 +51,252 @@
     padding-left: 10%;
     height: 900px;
   }
+  .hero-section-mobile{
+    display: none;
+  }
+  .image-section{
+    display: none;
+  }
+  .footer-list-mobile{
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .hero-section-mobile{
+      text-align: left !important;
+    }
+    .three-number{
+      justify-content: left !important;
+    }
+    .middle-section{
+      text-align: left !important;
+    }
+    .third-section{
+      text-align: left !important;
+    }
+    .icon-box{
+      justify-content: left !important;
+     }
+
+  }
+
+  @media screen and (max-width: 900px) {
+    .middle-section{
+      display: block !important;
+      text-align: center;
+    }
+    .third-section{
+      display: block !important;
+      padding: 20px !important;
+      text-align: center;
+    }
+   
+    .footer-list{
+      display: none !important;
+     }
+     .footer-list1{
+      display: none !important;
+     }
+  
+      .footer-list-mobile{
+        display: block !important;
+      }
+      .footer-heading-mobile{
+        display: flex !important;
+      }
+      .footer-head-mobile{
+        display: block !important;
+      }
+      .footer-head-mobile1{
+        color: #FFF;
+      font-size: 12px;
+      font-family: "Urbanist";
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: 0.096px;
+      padding-bottom: 1em;
+      padding-left: 10em;
+      }
+     .footer-head-mobile11{
+      color: #FFF;
+      font-size: 12px;
+      font-family: "Urbanist";
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: 0.096px;
+      padding-bottom: 1em;
+      padding-left: 11.5em;
+      }
+       .footer-heading1{
+        padding-top: 2em !important;
+       }
+  
+      .footer-heading2{
+        margin-top: 2em !important;
+        padding-top: 0 !important;
+      }
+      .footer-heading{
+        margin-top: 5% !important;
+      }
+    
+      footer{
+        display: block !important;
+      }
+      .footer-subscribe1{
+        display: block !important;
+      }
+      .footer-content-mobile1{
+        color: #FFF;
+      font-size: 12px;
+      font-family: "Urbanist";
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: 0.096px;
+      opacity: 0.6;
+      padding-bottom: 1em;
+      padding-left: 11.5em; 
+      }
+      .footer-content-mobile{
+        color: #FFF;
+      font-size: 12px;
+      font-family: "Urbanist";
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: 0.096px;
+      opacity: 0.6;
+      padding-bottom: 1em;
+      padding-left: 10em;
+      }
+      .footer-subscribe .form-control{
+        width: 250px;
+        margin-bottom: 10px;
+      }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .hero-section{
+      display: none;
+    } 
+    .image-section{
+      display: flex;
+      padding-bottom: 40px !important;
+      justify-content: center;
+    }
+
+  .btnclass{
+    display: flex;
+    justify-content: center;
+  }    
+  
+   .hero-section-mobile{
+      display: block;
+      padding: 20px;
+      text-align: center;
+}
+    .headmobile{
+      color: #2F3130;
+font-family: "DM Serif Display";
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+margin-block-end: 0;
+margin-block-start: 0;
+    }
+    .real1{
+      color: #9E2349;
+    font-family: "DM Serif Display";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    } 
+    .three-number{
+      display: flex;
+      justify-content: center;
+    }
+    
+.icon-box{
+ justify-content: center;
+}
+
+    .img-section{
+      width: 350px;
+      padding-bottom: 20px;
+    }
+    .btn{
+      justify-content: center !important;
+      display: flex !important;
+    }
+    .middle-section{
+      padding-right: 0% !important;
+    }
+    .third-section{
+      padding: 20px !important;
+    }
+    .icon-list{
+      margin-left: 0% !important;
+    }
+    .middle-section{
+      padding: 20px !important;
+      
+    }
+    h3{
+      font-size: 24px !important;
+      margin-block-start: 0em !important;
+    }
+    h5{
+      font-size: 12px !important;
+    }
+    h6{
+      font-size: 30px !important;
+    }
+    .icon-list2{
+      margin-left: 0% !important;
+    }
+  
+    .btn.btn-dark{
+      font-size: 12px !important;
+    }
+    h2{
+      font-size: 16px !important;
+    }
+    .social-list{
+      margin-bottom: 2rem !important;
+    }
+    
+  }
+   
+  
 
   .middle-section{
     display: flex;
-    background-color: #e9ecef;
+    background-color: transparent;
       background-position-x: right;
       background-size: cover;
       overflow: hidden;
       padding-top: 16.5rem;
       position: relative;
       padding-top: 5%;
-      padding-left: 10%;
+      padding-left: 8%;
+      padding-right: 8%;
+      gap: 30px;
+      justify-content: center;
+      
   }
 
   .third-section{
     display: flex;
-    background-color: #e9ecef;
+    background-color:transparent;
       background-position-x: right;
       background-size: cover;
       overflow: hidden;
       padding-top: 16.5rem;
       position: relative;
       padding-top: 5%;
-      padding-left: 10%;
+      padding-left: 8%;
+      padding-right: 8%;
       padding-bottom: 5%;
+      gap: 35px;
+      justify-content: center;
   }
   
 h1{
@@ -109,8 +372,18 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
-margin-right: 10%;
+
 }
+.deals{
+  margin-left: 2em;
+}
+.Investors{
+  margin-left: 2em;
+}
+.number2{
+  margin-left: 1em;;
+}
+
 .hero-img-container {
   align-items: flex-end;
   bottom: 0;
@@ -151,7 +424,7 @@ margin-top: 2%;
   }
 
   .icon-list2{
-    margin-left: 12%;
+    margin-left: 6%;
     margin-top: 2%;
     } 
 
@@ -165,7 +438,6 @@ font-family: "Lexend";
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
-padding-left: 3%;
 }
 .icon-content{
   color: #2F3130;
@@ -182,10 +454,15 @@ footer {
   padding-top: 5%;
   padding-bottom: 5%;
   display: flex;
+  justify-content: center;
 }
-.footer-subscribe-wrapper {
+.footer-subscribe1 {
   margin-bottom: 2rem;
 }
+.footer-subscribe{
+  display: flex;
+}
+
 .footer-subscribe .form-control {
   background-color: transparent;
   border: 1px solid hsla(0, 0%, 100%, .3);
@@ -195,12 +472,14 @@ footer {
   font-weight: 500;
   height: 55px;
   padding-left: 15px;
+  margin-bottom: 10px;
 }
 .btn.btn-dark {
   background: #2e302f;
   border-color: #2e302f;
   box-shadow: 0 6px 10px 2px rgba(0, 0, 0, .15);
 }
+
 
 h2{
   margin-block-end: 0;
@@ -215,7 +494,7 @@ margin-bottom: 5%;
 .social-list {
   display: flex
 ;
-  flex-wrap: wrap;
+  
   margin-top: 2rem;
 }
 .social-list a {
@@ -277,4 +556,30 @@ padding-bottom: 1em;
 .footer-list1{
   display: block;
   margin-left: 5%;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+input[type="email"] {
+  border: 0;
+  padding: 1rem;
+  margin-top: 0.3125rem;
+  border-radius: 15px;
+  width: 100%;
+  background-color: transparent;
+    border-style: solid;
+    border-color: #434443;
+    border-width: 1px;
+    color: #FFF;
+}
+input[type="submit"] {
+  background-color: #2E302F;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 1rem 0.9375rem;
+  margin-top: -13%;
+  margin-left: 52.2%;
+  border-radius: 15px;
 }
