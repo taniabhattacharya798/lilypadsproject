@@ -37,22 +37,23 @@
     <h1>Unprecedented <br> Era of <span class="real" id="typed"></span> </h1>
     <p>Lilypads uses sophisticated technologies for data-driven decisions in<br> investing, managing and funding commercial real estate assets</p>
     <button class="btn"><i class="fa fa-home"></i> Start Investing Now </button> 
+   
     <div class="number">
       <div>
-        <h3>658+</h3>
-        <h5>Properties Registered</h5>
-      </div>
-      <div>
-        <h3 class="number2">685+</h3>
-        <h5 class="deals">Deals Cracked</h5>
-      </div>
-      <div>
-        <h3 class="number2">255+</h3>
-        <h5 class="Investors">Investors</h5>
-      </div>
-
-    </div> 
+    <h3><span class="count">658</span>+</h3>
+    <h5>Properties Registered</h5>
   </div>
+  <div>
+    <h3><span class="count">685</span>+</h3>
+    <h5 class="deals">Deals Cracked</h5>
+  </div>
+  <div>
+    <h3><span class="count">255</span>+</h3>
+    <h5 class="Investors">Investors</h5> 
+  </div>
+ </div>
+  </div>
+
   <div class="hero-img-container">
     <div class="position-relative phone hero-img-container-inner">
       <img src="hero1.png" class="hero-inner-img scale-img scale-transition img-fluid">
@@ -70,20 +71,21 @@
       <h4>- Welcome to the</h4>
       <h1 class="headmobile">Unprecedented <br> Era of <span class="real1">Real Estate Investing </span> </h1>
       <p>Lilypads uses sophisticated technologies for data-driven decisions in investing, managing and funding commercial real estate assets</p>
+     
       <div class="three-number">
-        <div>
-          <h3>658+</h3>
-          <h5>Properties Registered</h5>
-        </div>
-        <div>
-          <h3 class="number2">685+</h3>
-          <h5 class="deals">Deals Cracked</h5>
-        </div>
-        <div>
-          <h3 class="number2">255+</h3>
-          <h5 class="Investors">Investors</h5>
-        </div>
-     </div> 
+       <div>
+        <h3><span class="count">658</span>+</h3>
+        <h5>Properties Registered</h5>
+      </div>
+      <div>
+        <h3><span class="count">685</span>+</h3>
+        <h5 class="deals">Deals Cracked</h5>
+      </div>
+      <div>
+        <h3><span class="count">255</span>+</h3>
+        <h5 class="Investors">Investors</h5> 
+      </div>
+   </div> 
     </div>
   </section>
   <section class="image-section">
@@ -292,5 +294,38 @@
   delaySpeed : 100,
   loop : true
 });
-</script>
 
+
+        const animationDuration = 3000;
+
+const frameDuration = 1000 / 60;
+
+const totalFrames = Math.round( animationDuration / frameDuration );
+
+const easeOutQuad = t => t * ( 2 - t );
+
+const animateCountUp = el => {
+    let frame = 0;
+    const countTo = parseInt( el.innerHTML, 10 );
+
+    const counter = setInterval( () => {
+        frame++;
+
+        const progress = easeOutQuad( frame / totalFrames );
+
+        const currentCount = Math.round( countTo * progress );
+
+
+        if ( parseInt( el.innerHTML, 10 ) !== currentCount ) {
+            el.innerHTML = currentCount;
+        }
+
+        if ( frame === totalFrames ) {
+            clearInterval( counter );
+        }
+    }, frameDuration );
+};
+
+    const countupEls = document.querySelectorAll( '.count' );
+    countupEls.forEach( animateCountUp );
+</script>
