@@ -858,15 +858,16 @@ input[type="submit"] {
 .button.is-signup {
   background-color: transparent;
   border-color: #ffff  !important;
-  color:#ffff;
+  color:#fff;
   font-family: "lexend";
   font-size: 16px;
+  font-weight: 600;
 }
 
 .button.is-signup:hover {
   background-color: #ffff;
   border-color: #ffff!important;
-  color:#000;
+  color:#7d59c3;
   animation: forwards;
   animation-duration: 0.3ms;
   
@@ -878,10 +879,16 @@ input[type="submit"] {
   background-color: #ffff;
   font-family: "lexend";
   font-size: 16px;
+  font-weight: 600;
 }
 
 .button.is-login:hover {
   color: #7d59c3;
   border-color: #ffff !important;
   background-color: transparent;
+}
+@media screen and (min-width: 2000px) {
+  .navbar {
+    justify-content: center !important;
+  }
 }
